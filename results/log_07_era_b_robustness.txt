@@ -1,0 +1,20 @@
+era B pooled paid, baseline: z_cyc=0.0027 (0.0035) p=0.4261; g_rel=0.0035 (0.0027) p=0.1909
+era B pooled paid, +CY FE: z_cyc=0.0001 (0.0046) p=0.9903; g_rel=0.0042 (0.0027) p=0.1267
+
+Early booked-ultimate errors vs cycle deviation (main lines, line FE):
+  era A, booked at lag 2: beta=-0.0231 se=0.0201 p=0.2498 n=32
+  era A, booked at lag 3: beta=-0.0429 se=0.0220 p=0.0509 n=28
+  era B, booked at lag 2: beta=0.0125 se=0.0182 p=0.4896 n=32
+  era B, booked at lag 3: beta=0.0219 se=0.0132 p=0.0970 n=28
+
+Gibbs era B pooled paid: mu_beta post mean 0.0024 sd 0.0034 Pr(<0)=0.23
+
+era A pooled (from first-hand casact files):
+era basis        line    spec   var    beta     se      p    n
+  A  paid POOLED_MAIN cyc+rel z_cyc -0.0001 0.0034 0.9736 4290
+  A  paid POOLED_MAIN cyc+rel g_rel  0.0000 0.0032 0.9935 4290
+
+pooled two-era file: z_cyc,0.0016215995694494243,0.0024602113187729875,0.5098121665754131
+g_rel,0.0026837769471330154,0.0019194627148683913,0.16205549122350105
+n,8679
+

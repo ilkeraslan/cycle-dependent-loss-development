@@ -1,0 +1,2 @@
+era-B PIT CL : KS=0.1123 p=1.64e-49 central4=0.596 n=4468
+era-B PIT COV: KS=0.0950 p=1.45e-35 central4=0.562 n=4468

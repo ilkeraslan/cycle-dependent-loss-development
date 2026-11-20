@@ -1,0 +1,70 @@
+booked error on z_raw: beta=-0.0052 se=0.0098 p=0.5971 n=36
+booked error on z_cyc: beta=0.0023 se=0.0107 p=0.8305 n=36
+
+main specs (both bases):
+        basis         line     spec    var    beta      se       p     n
+0       paid      comauto      raw  z_raw  0.0054  0.0042  0.1961  1518
+1       paid      comauto  cyc+rel  z_cyc -0.0014  0.0021  0.5049  1518
+2       paid      comauto  cyc+rel  g_rel  0.0013  0.0043  0.7528  1518
+3       paid       wkcomp      raw  z_raw  0.0260  0.0155  0.0933  1452
+4       paid       wkcomp  cyc+rel  z_cyc -0.0019  0.0038  0.6219  1452
+5       paid       wkcomp  cyc+rel  g_rel -0.0051  0.0033  0.1247  1452
+6       paid      othliab      raw  z_raw  0.0036  0.0026  0.1610  1122
+7       paid      othliab  cyc+rel  z_cyc  0.0025  0.0029  0.3785  1122
+8       paid      othliab  cyc+rel  g_rel  0.0458  0.0193  0.0174  1122
+9       paid     prodliab      raw  z_raw  0.0117  0.0353  0.7401   198
+10      paid     prodliab  cyc+rel  z_cyc  0.0270  0.0352  0.4424   198
+11      paid     prodliab  cyc+rel  g_rel  0.0015  0.0475  0.9753   198
+12      paid       ppauto      raw  z_raw  0.0225  0.0051  0.0000  2277
+13      paid       ppauto  cyc+rel  z_cyc -0.0058  0.0034  0.0897  2277
+14      paid       ppauto  cyc+rel  g_rel  0.0100  0.0047  0.0335  2277
+15      paid       medmal      raw  z_raw -0.0083  0.0075  0.2679   396
+16      paid       medmal  cyc+rel  z_cyc  0.0026  0.0095  0.7855   396
+17      paid       medmal  cyc+rel  g_rel  0.0284  0.0194  0.1428   396
+18      paid  POOLED_MAIN  cyc+rel  z_cyc -0.0001  0.0034  0.9736  4290
+19      paid  POOLED_MAIN  cyc+rel  g_rel  0.0000  0.0032  0.9935  4290
+20  incurred      comauto      raw  z_raw  0.0070  0.0028  0.0121  1518
+21  incurred      comauto  cyc+rel  z_cyc  0.0005  0.0022  0.8163  1518
+22  incurred      comauto  cyc+rel  g_rel  0.0017  0.0067  0.8045  1518
+23  incurred       wkcomp      raw  z_raw  0.0205  0.0085  0.0154  1452
+24  incurred       wkcomp  cyc+rel  z_cyc -0.0017  0.0034  0.6138  1452
+25  incurred       wkcomp  cyc+rel  g_rel  0.0017  0.0032  0.5919  1452
+26  incurred      othliab      raw  z_raw  0.0035  0.0040  0.3765  1122
+27  incurred      othliab  cyc+rel  z_cyc  0.0032  0.0040  0.4262  1122
+28  incurred      othliab  cyc+rel  g_rel  0.0480  0.0196  0.0143  1122
+29  incurred     prodliab      raw  z_raw  0.0265  0.0074  0.0003   197
+30  incurred     prodliab  cyc+rel  z_cyc  0.0277  0.0082  0.0007   197
+31  incurred     prodliab  cyc+rel  g_rel  0.0270  0.0214  0.2064   197
+32  incurred       ppauto      raw  z_raw  0.0171  0.0028  0.0000  2277
+33  incurred       ppauto  cyc+rel  z_cyc -0.0032  0.0029  0.2651  2277
+34  incurred       ppauto  cyc+rel  g_rel  0.0043  0.0032  0.1830  2277
+35  incurred       medmal      raw  z_raw  0.0149  0.0046  0.0012   396
+36  incurred       medmal  cyc+rel  z_cyc  0.0108  0.0036  0.0030   396
+37  incurred       medmal  cyc+rel  g_rel -0.0086  0.0117  0.4608   396
+38  incurred  POOLED_MAIN  cyc+rel  z_cyc  0.0015  0.0035  0.6757  4289
+39  incurred  POOLED_MAIN  cyc+rel  g_rel  0.0057  0.0031  0.0711  4289
+
+incurred per-lag z_cyc profile (pooled main lines):
+    lag    beta      se       p     n
+0    1 -0.0001  0.0090  0.9877  1039
+1    2 -0.0016  0.0024  0.5137   910
+2    3  0.0023  0.0027  0.4072   780
+3    4  0.0001  0.0021  0.9563   650
+4    5  0.0007  0.0012  0.5516   520
+5    6 -0.0025  0.0007  0.0006   390
+
+OOS summary:
+                     mse_cl   mse_cy       n  gain_pct
+basis    line                                        
+paid     comauto   0.00594  0.00573   966.0   3.59052
+         medmal    0.02099  0.02041   252.0   2.76416
+         othliab   0.03441  0.03279   714.0   4.70900
+         ppauto    0.00103  0.00098  1449.0   4.74169
+         prodliab  0.06888  0.07044   126.0  -2.26283
+         wkcomp    0.00531  0.00520   924.0   2.10066
+incurred comauto   0.00543  0.00538   966.0   0.88882
+         medmal    0.01775  0.01920   252.0  -8.14924
+         othliab   0.02648  0.02534   714.0   4.31148
+         ppauto    0.00108  0.00106  1449.0   1.24483
+         prodliab  0.02502  0.02666   102.0  -6.52525
+         wkcomp    0.00483  0.00466   924.0   3.65029

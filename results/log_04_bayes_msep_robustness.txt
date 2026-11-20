@@ -1,0 +1,36 @@
+=== Bayes posterior (pooled main lines) ===
+       param  post_mean  post_sd   p_neg
+0  beta_lag1     0.0043   0.0055  0.2076
+1  beta_lag2    -0.0038   0.0038  0.8392
+2  beta_lag3    -0.0010   0.0026  0.6520
+3  beta_lag4    -0.0022   0.0019  0.8744
+4  beta_lag5     0.0027   0.0016  0.0444
+5  beta_lag6    -0.0034   0.0016  0.9776
+6    mu_beta    -0.0005   0.0030  0.5852
+7      gamma    -0.0003   0.0015  0.5644
+8        tau     0.0303   0.0026     NaN
+9      omega     0.0063   0.0019     NaN
+
+=== PIT (paid, one-year-ahead) ===
+CL: KS=0.1430 p=0.0000 deciles=[290, 330, 523, 795, 751, 575, 419, 270, 213, 265]
+COV: KS=0.1203 p=0.0000 deciles=[270, 306, 468, 718, 781, 608, 462, 302, 210, 306]
+n cells = 4431
+
+=== MSEP (aggregate 1997 reserve, $000s) ===
+       line   reserve_cl       se_cl  cv_cl   reserve_cy       se_cy  cv_cy
+0   comauto  1568449.870   97594.248  0.062  1559311.435   98409.354  0.063
+1    wkcomp  2230315.107  122050.795  0.055  2170456.193  128852.591  0.059
+2   othliab  1241441.488  127047.663  0.102  1089001.058  126227.778  0.116
+3  prodliab   411253.452   92209.263  0.224   477773.738  134510.223  0.282
+
+=== Robustness of pooled z_cyc ===
+                       check    beta      se       p     n
+0  linear detrend (baseline) -0.0001  0.0034  0.9736  4290
+1          quadratic detrend  0.0028  0.0041  0.4991  4290
+2           first difference  0.0088  0.0040  0.0270  3510
+3     calendar-year FE added  0.0064  0.0041  0.1230  4290
+4  screen: median NEP >= $1m -0.0001  0.0033  0.9851  5511
+5  screen: median NEP >= $5m -0.0000  0.0035  0.9989  2772
+
+=== LOCO othliab g_rel ===
+beta range [0.0152, 0.0556], max p = 0.0586, all beta>0: True

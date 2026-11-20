@@ -1,0 +1,6 @@
+__pycache__/
+.DS_Store
+# CAS data: download from casact.org, see data/README.md
+data/cas_earlier/
+data/cas_current/
+data/cas_full_square.csv

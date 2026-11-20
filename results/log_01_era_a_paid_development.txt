@@ -1,0 +1,77 @@
+BOOKED-ULT ERROR on z_cyc (main lines, line FE): beta=0.0023 se=0.0107 p=0.8305 n=36
+
+screening:
+           full  pos_prem  med_ok  stable  pos_paid  dev_ok  keep  total
+line                                                                   
+comauto    158        92      47     104        84     150    46    158
+medmal      34        14      16      17        12      30    12     34
+othliab    239       156      45     171        96     212    34    239
+ppauto     146        92      81     104        88     142    69    146
+prodliab    70        34       8      42        13      58     6     70
+wkcomp     132        65      51      79        58     124    44    132
+
+kept: {'comauto': 46, 'medmal': 12, 'othliab': 34, 'ppauto': 69, 'prodliab': 6, 'wkcomp': 44}
+
+z_cyc by line/AY:
+ line    comauto  medmal  othliab  ppauto  prodliab  wkcomp
+acc_yr                                                    
+1989      -1.19    0.09     0.66   -1.17     -0.28   -1.06
+1990       1.23   -0.29    -1.15    0.67     -0.05   -1.00
+1991       0.10   -0.51    -0.58   -0.58     -0.49    0.77
+1992      -0.56   -0.12    -0.02    0.40     -0.77    0.71
+1993      -0.49   -0.51    -0.11   -0.01      0.56    1.63
+1994       2.02    1.09     1.68    1.58      1.87    0.31
+1995      -0.39    1.70     1.25    1.07      0.70    0.50
+1996      -0.23    0.32    -0.76   -0.73      0.12   -1.09
+1997      -0.48   -1.78    -0.97   -1.23     -1.66   -0.77
+
+main specs:
+         line     spec    var    beta      se       p     n  n_ay
+0    comauto      raw  z_raw  0.0054  0.0042  0.1961  1518     8
+1    comauto      cyc  z_cyc -0.0014  0.0021  0.5005  1518     8
+2    comauto  cyc+rel  z_cyc -0.0014  0.0021  0.5049  1518     8
+3    comauto  cyc+rel  g_rel  0.0013  0.0043  0.7528  1518     8
+12    wkcomp      raw  z_raw  0.0260  0.0155  0.0933  1452     8
+13    wkcomp      cyc  z_cyc -0.0019  0.0038  0.6164  1452     8
+14    wkcomp  cyc+rel  z_cyc -0.0019  0.0038  0.6219  1452     8
+15    wkcomp  cyc+rel  g_rel -0.0051  0.0033  0.1247  1452     8
+24   othliab      raw  z_raw  0.0036  0.0026  0.1610  1122     8
+25   othliab      cyc  z_cyc  0.0037  0.0028  0.1849  1122     8
+26   othliab  cyc+rel  z_cyc  0.0025  0.0029  0.3785  1122     8
+27   othliab  cyc+rel  g_rel  0.0458  0.0193  0.0174  1122     8
+36  prodliab      raw  z_raw  0.0117  0.0353  0.7401   198     8
+37  prodliab      cyc  z_cyc  0.0272  0.0320  0.3961   198     8
+38  prodliab  cyc+rel  z_cyc  0.0270  0.0352  0.4424   198     8
+39  prodliab  cyc+rel  g_rel  0.0015  0.0475  0.9753   198     8
+48    ppauto      raw  z_raw  0.0225  0.0051  0.0000  2277     8
+49    ppauto      cyc  z_cyc -0.0058  0.0034  0.0896  2277     8
+50    ppauto  cyc+rel  z_cyc -0.0058  0.0034  0.0897  2277     8
+51    ppauto  cyc+rel  g_rel  0.0100  0.0047  0.0335  2277     8
+60    medmal      raw  z_raw -0.0083  0.0075  0.2679   396     8
+61    medmal      cyc  z_cyc  0.0015  0.0093  0.8713   396     8
+62    medmal  cyc+rel  z_cyc  0.0026  0.0095  0.7855   396     8
+63    medmal  cyc+rel  g_rel  0.0284  0.0194  0.1428   396     8
+
+pooled main lines (z_cyc, g_rel):
+          beta      se       p     n
+z_cyc -0.0001  0.0034  0.9736  4290
+g_rel  0.0000  0.0032  0.9935  4290
+
+per-lag z_cyc profile (main lines):
+         line  spec    var    beta      se       p    n  n_ay
+4    comauto  lag1  z_cyc -0.0023  0.0128  0.8587  368     8
+6    comauto  lag2  z_cyc -0.0020  0.0026  0.4434  322     7
+8    comauto  lag3  z_cyc -0.0028  0.0020  0.1725  276     6
+10   comauto  lag4  z_cyc -0.0027  0.0018  0.1364  230     5
+16    wkcomp  lag1  z_cyc  0.0200  0.0301  0.5075  352     8
+18    wkcomp  lag2  z_cyc -0.0149  0.0038  0.0001  308     7
+20    wkcomp  lag3  z_cyc -0.0002  0.0037  0.9469  264     6
+22    wkcomp  lag4  z_cyc -0.0022  0.0034  0.5138  220     5
+28   othliab  lag1  z_cyc  0.0579  0.0266  0.0299  272     8
+30   othliab  lag2  z_cyc -0.0060  0.0106  0.5702  238     7
+32   othliab  lag3  z_cyc -0.0040  0.0073  0.5893  204     6
+34   othliab  lag4  z_cyc  0.0264  0.0130  0.0431  170     5
+40  prodliab  lag1  z_cyc  0.0110  0.0858  0.8985   48     8
+42  prodliab  lag2  z_cyc  0.1560  0.1164  0.1800   42     7
+44  prodliab  lag3  z_cyc  0.0447  0.0215  0.0376   36     6
+46  prodliab  lag4  z_cyc -0.1268  0.0203  0.0000   30     5

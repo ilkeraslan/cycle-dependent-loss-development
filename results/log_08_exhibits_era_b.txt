@@ -1,0 +1,2 @@
+era-B exhibits written to results/
+era B totals in db: {'comauto': 146, 'wkcomp': 121, 'othliab': 220, 'prodliab': 63, 'ppauto': 132, 'medmal': 32}

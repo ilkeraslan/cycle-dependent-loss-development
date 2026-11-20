@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper below."
+title: "Code for: Testing for cycle-dependent loss development in long-tail casualty business"
+type: software
+authors:
+  - family-names: Aslan
+    given-names: Ilker
+    orcid: "https://orcid.org/0000-0001-9241-9420"
+    affiliation: "Kalaidos University of Applied Sciences"
+license: MIT
+repository-code: "https://github.com/ilkeraslan/"
+keywords:
+  - claims reserving
+  - chain ladder
+  - underwriting cycle
+  - loss development
+  - Schedule P
+preferred-citation:
+  type: report
+  title: "Testing for cycle-dependent loss development in long-tail casualty business"
+  authors:
+    - family-names: Aslan
+      given-names: Ilker
+      orcid: "https://orcid.org/0000-0001-9241-9420"
+      affiliation: "Kalaidos University of Applied Sciences"
+
+  institution:
+    name: "SSRN"
+  year: 2026
+  doi: "10.2139/ssrn.7144158"
+  url: "https://ssrn.com/abstract=7144158"

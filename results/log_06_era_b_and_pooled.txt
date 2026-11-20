@@ -1,0 +1,81 @@
+[era A] booked-ult error on z_cyc: beta=0.0023 se=0.0107 p=0.8305 n=36
+[era B] booked-ult error on z_cyc: beta=-0.0268 se=0.0233 p=0.2492 n=36
+
+[POOLED 1988-2007, paid, main lines] z_cyc: 0.0016 (0.0025) p=0.5098; g_rel: 0.0027 (0.0019) p=0.1621; n=8679
+
+=== provenance (era A vs mirror) ===
+    line  n_records_casact  n_records_mirror  paid_match  caseinc_match  nep_match
+ comauto             15800             15800        True           True       True
+  wkcomp             13200             13200        True           True       True
+ othliab             23900             23900        True           True       True
+prodliab              7000              7000        True           True       True
+  ppauto             14600             14600        True           True       True
+  medmal              3400              3400        True           True       True
+
+=== era-B covariate (z_cyc) by line/AY ===
+line    comauto  medmal  othliab  ppauto  prodliab  wkcomp
+acc_yr                                                    
+1999      -1.35   -1.14    -1.72   -1.36     -1.59   -0.12
+2000      -0.57    2.36     0.19   -0.69     -0.62    0.03
+2001       0.17   -0.88     0.22    0.64      1.14   -1.80
+2002       1.52   -0.07     1.07    1.63      1.26    2.12
+2003       1.32   -0.55     0.95    1.31      0.77    0.19
+2004       0.70   -0.01     1.26    0.02      0.43    0.12
+2005      -0.22    0.21    -0.66   -0.66     -0.24    0.01
+2006      -0.73    0.09    -0.49   -0.29      0.02   -0.19
+2007      -0.83    0.00    -0.82   -0.60     -1.17   -0.37
+
+=== main specs, era B ===
+era    basis        line    spec   var    beta     se      p    n
+  B     paid     comauto     raw z_raw  0.0044 0.0039 0.2589 1749
+  B     paid     comauto cyc+rel z_cyc  0.0057 0.0029 0.0464 1749
+  B     paid     comauto cyc+rel g_rel  0.0120 0.0031 0.0001 1749
+  B     paid      wkcomp     raw z_raw  0.0017 0.0037 0.6369  924
+  B     paid      wkcomp cyc+rel z_cyc  0.0023 0.0046 0.6196  924
+  B     paid      wkcomp cyc+rel g_rel -0.0010 0.0034 0.7743  924
+  B     paid     othliab     raw z_raw  0.0048 0.0013 0.0002 1551
+  B     paid     othliab cyc+rel z_cyc  0.0059 0.0014 0.0000 1551
+  B     paid     othliab cyc+rel g_rel  0.0253 0.0096 0.0086 1551
+  B     paid    prodliab     raw z_raw -0.0061 0.0118 0.6045  165
+  B     paid    prodliab cyc+rel z_cyc -0.0051 0.0099 0.6077  165
+  B     paid    prodliab cyc+rel g_rel -0.0512 0.0290 0.0772  165
+  B     paid      ppauto     raw z_raw -0.0021 0.0004 0.0000 2607
+  B     paid      ppauto cyc+rel z_cyc -0.0021 0.0004 0.0000 2607
+  B     paid      ppauto cyc+rel g_rel  0.0105 0.0027 0.0001 2607
+  B     paid POOLED_MAIN cyc+rel z_cyc  0.0027 0.0035 0.4261 4389
+  B     paid POOLED_MAIN cyc+rel g_rel  0.0035 0.0027 0.1909 4389
+  B incurred     comauto     raw z_raw  0.0023 0.0023 0.3035 1749
+  B incurred     comauto cyc+rel z_cyc  0.0033 0.0016 0.0392 1749
+  B incurred     comauto cyc+rel g_rel -0.0006 0.0022 0.8000 1749
+  B incurred      wkcomp     raw z_raw -0.0003 0.0028 0.9170  924
+  B incurred      wkcomp cyc+rel z_cyc -0.0002 0.0059 0.9752  924
+  B incurred      wkcomp cyc+rel g_rel -0.0001 0.0051 0.9810  924
+  B incurred     othliab     raw z_raw -0.0022 0.0037 0.5540 1551
+  B incurred     othliab cyc+rel z_cyc -0.0014 0.0038 0.7197 1551
+  B incurred     othliab cyc+rel g_rel -0.0047 0.0116 0.6835 1551
+  B incurred    prodliab     raw z_raw  0.0040 0.0103 0.6985  165
+  B incurred    prodliab cyc+rel z_cyc -0.0011 0.0065 0.8689  165
+  B incurred    prodliab cyc+rel g_rel -0.0175 0.0265 0.5093  165
+  B incurred      ppauto     raw z_raw -0.0009 0.0005 0.0824 2607
+  B incurred      ppauto cyc+rel z_cyc -0.0009 0.0005 0.0793 2607
+  B incurred      ppauto cyc+rel g_rel  0.0112 0.0041 0.0065 2607
+  B incurred POOLED_MAIN cyc+rel z_cyc  0.0009 0.0031 0.7735 4389
+  B incurred POOLED_MAIN cyc+rel g_rel -0.0013 0.0022 0.5373 4389
+
+=== OOS summary era B ===
+                    mse_cl   mse_cy  gain_pct
+basis    line                                
+incurred comauto   0.00430  0.00438  -1.87902
+         medmal    0.02233  0.03512 -57.26830
+         othliab   0.02260  0.02223   1.62720
+         ppauto    0.00079  0.00080  -1.62949
+         prodliab  0.02403  0.02572  -7.06237
+         wkcomp    0.00377  0.00368   2.30758
+paid     comauto   0.00536  0.00533   0.55402
+         medmal    0.04402  0.06057 -37.60584
+         othliab   0.02722  0.02639   3.03590
+         ppauto    0.00069  0.00075  -8.63153
+         prodliab  0.03184  0.03105   2.46800
+         wkcomp    0.00337  0.00341  -1.17534
+
+kept companies era B: {'comauto': 53, 'medmal': 3, 'othliab': 47, 'ppauto': 79, 'prodliab': 5, 'wkcomp': 28}
